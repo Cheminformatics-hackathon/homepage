@@ -1,0 +1,71 @@
+# ======================================================
+# テーマ・プロジェクト例
+# ======================================================
+
+- title: "QSAR モデリング"
+  description: "定量的構造活性相関（QSAR）モデルを構築し、化合物の活性を予測します。分子記述子の計算からモデル評価まで一連のワークフローを体験できます。"
+  tags:
+    - "機械学習"
+    - "RDKit"
+    - "scikit-learn"
+  difficulty: "初級〜中級"
+  type: "運営テーマ"
+  output: "発表 / GitHub"
+
+- title: "分子生成 AI"
+  description: "深層学習を用いた分子生成モデル（VAE, GAN, Diffusion など）を実装し、新規化合物を提案します。"
+  tags:
+    - "深層学習"
+    - "PyTorch"
+    - "生成モデル"
+  difficulty: "中級〜上級"
+  type: "運営テーマ"
+  output: "発表 / デモ / GitHub"
+
+- title: "DPPH ラジカル消去活性予測"
+  description: "天然物・合成化合物のDPPHラジカル消去活性を分子記述子やフィンガープリントで予測するモデルを構築します。"
+  tags:
+    - "QSAR"
+    - "RDKit"
+    - "ランダムフォレスト"
+  difficulty: "初級〜中級"
+  type: "運営テーマ"
+  output: "発表 / GitHub"
+
+- title: "タンパク質-リガンド ドッキング"
+  description: "分子ドッキングシミュレーションを用いて、ターゲットタンパク質に対する化合物のバインディングを予測します。AutoDockやRDKitを活用します。"
+  tags:
+    - "ドッキング"
+    - "AutoDock"
+    - "構造生物学"
+  difficulty: "中級"
+  type: "運営テーマ"
+  output: "発表 / GitHub"
+
+- title: "反応経路・収率予測"
+  description: "有機化学反応の収率や反応機構をデータ駆動で予測するモデルを構築します。SMILES変換やグラフニューラルネットワークを使います。"
+  tags:
+    - "GNN"
+    - "反応予測"
+    - "SMILES"
+  difficulty: "中級〜上級"
+  type: "運営テーマ"
+  output: "発表 / GitHub"
+
+- title: "LLM × 化学"
+  description: "大規模言語モデル（LLM）を化学分野に応用します。化合物の特性予測、文献マイニング、分子キャプション生成など自由にテーマを設定できます。"
+  tags:
+    - "LLM"
+    - "NLP"
+    - "RAG"
+  difficulty: "中級〜上級"
+  type: "運営テーマ"
+  output: "発表 / デモ / GitHub"
+
+- title: "自由テーマ（持ち込み歓迎）"
+  description: "上記以外にも自分の研究テーマや興味のある課題をハッカソンで取り組むことができます。メンターがサポートします。"
+  tags:
+    - "自由"
+  difficulty: "問わず"
+  type: "持ち込みテーマ"
+  output: "発表 / GitHub"

@@ -1,0 +1,64 @@
+# ======================================================
+# サイト基本情報
+# ここを編集するだけで全ページに反映されます
+# ======================================================
+
+# イベント基本情報
+event:
+  name: "ケモインフォマティクス×ハッカソン合宿"
+  name_en: "Cheminformatics Hackathon Camp"
+  edition: "2026"
+  catchcopy: "分子の世界をコードで切り拓く"
+  description: "ケモインフォマティクスの最前線を学び、チームでハッカソンに挑む合宿型ワークショップ"
+
+# 開催情報（未定の場合は "TBA" に設定）
+date:
+  start: "TBA"
+  end: "TBA"
+  display: "TBA（2泊3日を予定）"
+venue:
+  name: "TBA"
+  address: "TBA"
+  access: "TBA"
+  map_url: ""
+  map_embed: ""
+
+# 参加情報
+registration:
+  capacity: "TBA"
+  fee: "TBA"
+  deadline: "TBA"
+  form_url: "#"
+  status: "準備中"  # "受付中" / "準備中" / "締切"
+
+# 参加対象
+target: "学部生〜博士課程の学生、社会人（初心者歓迎）"
+
+# 開催形式
+format: "対面（合宿形式）"
+
+# CTAボタン
+cta:
+  primary:
+    text: "参加登録はこちら"
+    url: "#"
+  secondary:
+    text: "募集要項を見る"
+    url: "#"
+
+# SNS / 外部リンク
+links:
+  github: "https://github.com/Cheminformatics-hackathon"
+  twitter: ""
+  discord: ""
+  email: "TBA"
+
+# OGP設定
+ogp:
+  image: "/assets/img/ogp.png"
+  type: "website"
+
+# 運営情報
+organizer:
+  name: "ケモインフォマティクス×ハッカソン合宿 実行委員会"
+  contact: "TBA"

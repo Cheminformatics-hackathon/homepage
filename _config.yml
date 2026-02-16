@@ -1,0 +1,37 @@
+# ======================================================
+# ケモインフォマティクス×ハッカソン合宿 公式サイト
+# Jekyll Configuration
+# ======================================================
+
+title: "ケモインフォマティクス×ハッカソン合宿"
+description: "ケモインフォマティクスの最前線を学び、仲間と共にハッカソンで実践するための合宿型イベント"
+url: "" # GitHub Pages公開後に設定（例: https://username.github.io）
+baseurl: "/homepage" # リポジトリ名に合わせる
+
+# テーマ
+# remote_theme は使わず、自作レイアウトを使用
+
+# Markdown設定
+markdown: kramdown
+kramdown:
+  input: GFM
+
+# ビルド設定
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+
+# デフォルト設定
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+
+# プラグイン（GitHub Pages対応のもののみ）
+plugins:
+  - jekyll-seo-tag

@@ -1,0 +1,119 @@
+---
+layout: default
+---
+
+{% include hero.html %}
+
+<!-- 重要情報サマリー -->
+<section class="py-5">
+    <div class="container">
+        <h2 class="section-title text-center mb-4"><i class="bi bi-info-circle me-2"></i>開催概要</h2>
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+                <div class="row g-3">
+                    <div class="col-md-4">
+                        <div class="card h-100 border-0 shadow-sm text-center p-3">
+                            <div class="card-body">
+                                <i class="bi bi-calendar-event fs-2 text-navy d-block mb-2"></i>
+                                <h6 class="fw-bold">日程</h6>
+                                <p class="mb-0 text-muted">{{ site.data.site.date.display }}</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card h-100 border-0 shadow-sm text-center p-3">
+                            <div class="card-body">
+                                <i class="bi bi-geo-alt fs-2 text-navy d-block mb-2"></i>
+                                <h6 class="fw-bold">会場</h6>
+                                <p class="mb-0 text-muted">{{ site.data.site.venue.name }}</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card h-100 border-0 shadow-sm text-center p-3">
+                            <div class="card-body">
+                                <i class="bi bi-cash-stack fs-2 text-navy d-block mb-2"></i>
+                                <h6 class="fw-bold">参加費</h6>
+                                <p class="mb-0 text-muted">{{ site.data.site.registration.fee }}</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card h-100 border-0 shadow-sm text-center p-3">
+                            <div class="card-body">
+                                <i class="bi bi-people fs-2 text-navy d-block mb-2"></i>
+                                <h6 class="fw-bold">定員</h6>
+                                <p class="mb-0 text-muted">{{ site.data.site.registration.capacity }}</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card h-100 border-0 shadow-sm text-center p-3">
+                            <div class="card-body">
+                                <i class="bi bi-person-check fs-2 text-navy d-block mb-2"></i>
+                                <h6 class="fw-bold">対象</h6>
+                                <p class="mb-0 text-muted">{{ site.data.site.target }}</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card h-100 border-0 shadow-sm text-center p-3">
+                            <div class="card-body">
+                                <i class="bi bi-building fs-2 text-navy d-block mb-2"></i>
+                                <h6 class="fw-bold">形式</h6>
+                                <p class="mb-0 text-muted">{{ site.data.site.format }}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- お知らせ -->
+{% include news.html %}
+
+<!-- テーマ紹介（抜粋） -->
+<section class="py-5">
+    <div class="container">
+        <h2 class="section-title text-center mb-4"><i class="bi bi-lightbulb me-2"></i>テーマ例</h2>
+        <div class="row g-4 justify-content-center">
+            {% for theme in site.data.themes limit:3 %}
+            <div class="col-md-4">
+                <div class="card h-100 border-0 shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">{{ theme.title }}</h5>
+                        <p class="card-text text-muted small">{{ theme.description | truncate: 80 }}</p>
+                        <div>
+                            {% for tag in theme.tags %}
+                            <span class="badge bg-light text-navy me-1">{{ tag }}</span>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+        <div class="text-center mt-4">
+            <a href="{{ '/themes' | relative_url }}" class="btn btn-outline-navy">すべてのテーマを見る <i
+                    class="bi bi-arrow-right"></i></a>
+        </div>
+    </div>
+</section>
+
+<!-- CTA -->
+<section class="py-5 bg-navy text-white text-center">
+    <div class="container">
+        <h2 class="fw-bold mb-3">参加者募集中</h2>
+        <p class="lead mb-4">{{ site.data.site.event.catchcopy }}</p>
+        <a href="{{ site.data.site.cta.primary.url }}" class="btn btn-accent btn-lg me-2 mb-2">
+            <i class="bi bi-pencil-square me-1"></i> {{ site.data.site.cta.primary.text }}
+        </a>
+        <a href="{{ '/about' | relative_url }}" class="btn btn-outline-light btn-lg mb-2">
+            <i class="bi bi-info-circle me-1"></i> 詳しく見る
+        </a>
+    </div>
+</section>
+
+{{ content }}

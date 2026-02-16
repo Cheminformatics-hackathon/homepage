@@ -1,0 +1,47 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-navy sticky-top">
+    <div class="container">
+        <a class="navbar-brand fw-bold" href="{{ '/' | relative_url }}">
+            <i class="bi bi-moisture me-2"></i>{{ site.data.site.event.name_en | default: "ChemInfo Hack" }}
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain"
+            aria-controls="navbarMain" aria-expanded="false" aria-label="メニュー">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarMain">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link {% if page.url == '/' %}active{% endif %}"
+                        href="{{ '/' | relative_url }}">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link {% if page.url contains '/about' %}active{% endif %}"
+                        href="{{ '/about' | relative_url }}">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link {% if page.url contains '/program' %}active{% endif %}"
+                        href="{{ '/program' | relative_url }}">Program</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link {% if page.url contains '/themes' %}active{% endif %}"
+                        href="{{ '/themes' | relative_url }}">Themes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link {% if page.url contains '/venue' %}active{% endif %}"
+                        href="{{ '/venue' | relative_url }}">Venue</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link {% if page.url contains '/registration' %}active{% endif %}"
+                        href="{{ '/registration' | relative_url }}">Registration</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link {% if page.url contains '/faq' %}active{% endif %}"
+                        href="{{ '/faq' | relative_url }}">FAQ</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link {% if page.url contains '/contact' %}active{% endif %}"
+                        href="{{ '/contact' | relative_url }}">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
