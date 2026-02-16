@@ -1,0 +1,77 @@
+<footer class="footer bg-dark text-light py-5 mt-5">
+    <div class="container">
+        <div class="row">
+            <!-- 運営情報 -->
+            <div class="col-md-4 mb-4">
+                <h5 class="fw-bold mb-3"><i class="bi bi-moisture me-2"></i>{{ site.data.site.event.name }}</h5>
+                <p class="text-secondary small">{{ site.data.site.event.description }}</p>
+                <p class="text-secondary small mb-0">主催：{{ site.data.site.organizer.name }}</p>
+            </div>
+
+            <!-- リンク -->
+            <div class="col-md-4 mb-4">
+                <h6 class="fw-bold mb-3">ページリンク</h6>
+                <ul class="list-unstyled small">
+                    <li class="mb-1"><a href="{{ '/about' | relative_url }}"
+                            class="text-secondary text-decoration-none">About（概要）</a></li>
+                    <li class="mb-1"><a href="{{ '/program' | relative_url }}"
+                            class="text-secondary text-decoration-none">Program（日程）</a></li>
+                    <li class="mb-1"><a href="{{ '/themes' | relative_url }}"
+                            class="text-secondary text-decoration-none">Themes（テーマ）</a></li>
+                    <li class="mb-1"><a href="{{ '/venue' | relative_url }}"
+                            class="text-secondary text-decoration-none">Venue（会場）</a></li>
+                    <li class="mb-1"><a href="{{ '/registration' | relative_url }}"
+                            class="text-secondary text-decoration-none">Registration（参加登録）</a></li>
+                    <li class="mb-1"><a href="{{ '/faq' | relative_url }}"
+                            class="text-secondary text-decoration-none">FAQ</a></li>
+                    <li class="mb-1"><a href="{{ '/contact' | relative_url }}"
+                            class="text-secondary text-decoration-none">Contact（問い合わせ）</a></li>
+                </ul>
+            </div>
+
+            <!-- SNS / 連絡先 -->
+            <div class="col-md-4 mb-4">
+                <h6 class="fw-bold mb-3">Links</h6>
+                <ul class="list-unstyled">
+                    {% if site.data.site.links.github != "" %}
+                    <li class="mb-2">
+                        <a href="{{ site.data.site.links.github }}" class="text-secondary text-decoration-none"
+                            target="_blank" rel="noopener">
+                            <i class="bi bi-github me-2"></i>GitHub
+                        </a>
+                    </li>
+                    {% endif %}
+                    {% if site.data.site.links.twitter != "" %}
+                    <li class="mb-2">
+                        <a href="{{ site.data.site.links.twitter }}" class="text-secondary text-decoration-none"
+                            target="_blank" rel="noopener">
+                            <i class="bi bi-twitter-x me-2"></i>X (Twitter)
+                        </a>
+                    </li>
+                    {% endif %}
+                    {% if site.data.site.links.discord != "" %}
+                    <li class="mb-2">
+                        <a href="{{ site.data.site.links.discord }}" class="text-secondary text-decoration-none"
+                            target="_blank" rel="noopener">
+                            <i class="bi bi-discord me-2"></i>Discord
+                        </a>
+                    </li>
+                    {% endif %}
+                    {% if site.data.site.links.email != "" and site.data.site.links.email != "TBA" %}
+                    <li class="mb-2">
+                        <a href="mailto:{{ site.data.site.links.email }}" class="text-secondary text-decoration-none">
+                            <i class="bi bi-envelope me-2"></i>{{ site.data.site.links.email }}
+                        </a>
+                    </li>
+                    {% endif %}
+                </ul>
+            </div>
+        </div>
+
+        <hr class="border-secondary">
+        <div class="text-center text-secondary small">
+            <p class="mb-0">&copy; {{ site.time | date: '%Y' }} {{ site.data.site.organizer.name }}. All rights
+                reserved.</p>
+        </div>
+    </div>
+</footer>

@@ -1,0 +1,35 @@
+<section class="hero-section">
+    <div class="hero-overlay"></div>
+    <div class="container position-relative">
+        <div class="row justify-content-center">
+            <div class="col-lg-10 text-center">
+                <p class="hero-edition mb-2">{{ site.data.site.event.edition }}</p>
+                <h1 class="hero-title display-3 fw-bold mb-3">{{ site.data.site.event.name }}</h1>
+                <p class="hero-subtitle lead mb-4">{{ site.data.site.event.catchcopy }}</p>
+
+                <div class="hero-info mb-4">
+                    <span class="hero-info-item">
+                        <i class="bi bi-calendar3 me-1"></i> {{ site.data.site.date.display }}
+                    </span>
+                    <span class="hero-info-divider mx-3">|</span>
+                    <span class="hero-info-item">
+                        <i class="bi bi-geo-alt me-1"></i> {{ site.data.site.venue.name }}
+                    </span>
+                    <span class="hero-info-divider mx-3">|</span>
+                    <span class="hero-info-item">
+                        <i class="bi bi-people me-1"></i> {{ site.data.site.target }}
+                    </span>
+                </div>
+
+                <div class="hero-cta">
+                    <a href="{{ site.data.site.cta.primary.url }}" class="btn btn-accent btn-lg me-3 mb-2">
+                        <i class="bi bi-pencil-square me-1"></i> {{ site.data.site.cta.primary.text }}
+                    </a>
+                    <a href="{{ '/about' | relative_url }}" class="btn btn-outline-light btn-lg mb-2">
+                        <i class="bi bi-info-circle me-1"></i> 詳しく見る
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
