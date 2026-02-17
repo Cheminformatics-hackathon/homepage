@@ -27,7 +27,7 @@
 <!-- Google Fonts -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@400;500;700;800&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
 
 <!-- Custom CSS -->
 <link rel="stylesheet" href="/homepage/assets/css/custom.css">
@@ -37,53 +37,78 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-navy sticky-top">
-    <div class="container">
-        <a class="navbar-brand fw-bold" href="/homepage/">
-            <i class="bi bi-moisture me-2"></i>Cheminformatics Hackathon Camp
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain"
-            aria-controls="navbarMain" aria-expanded="false" aria-label="メニュー">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarMain">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item">
-                    <a class="nav-link "
-                        href="/homepage/">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link "
-                        href="/homepage/about">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active"
-                        href="/homepage/program">Program</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link "
-                        href="/homepage/themes">Themes</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link "
-                        href="/homepage/venue">Venue</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link "
-                        href="/homepage/registration">Registration</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link "
-                        href="/homepage/faq">FAQ</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link "
-                        href="/homepage/contact">Contact</a>
-                </li>
-            </ul>
-        </div>
+    <header class="site-header sticky-top">
+  <div class="utility-bar">
+    <div class="container utility-inner">
+      <span>ケモインフォマティクス×ハッカソン合宿 実行委員会</span>
+      <span class="lang-links"><a href="#">Japanese</a> | <a href="#">English</a></span>
     </div>
-</nav>
+  </div>
+
+  <nav class="main-nav">
+    <div class="container">
+      <a class="navbar-brand" href="/homepage/">
+        <span class="brand-mark"><i class="bi bi-hexagon-fill"></i></span>
+        <span class="brand-text">
+          <strong>ケモインフォマティクス×ハッカソン合宿</strong>
+          <small>Cheminformatics Hackathon Camp</small>
+        </span>
+      </a>
+      <ul class="main-nav-list">
+        
+        
+        
+        <li>
+          <a class="active" href="/homepage/">Home</a>
+        </li>
+        
+        
+        
+        <li>
+          <a class="active" href="/homepage/about">About</a>
+        </li>
+        
+        
+        
+        <li>
+          <a class="active" href="/homepage/program">Program</a>
+        </li>
+        
+        
+        
+        <li>
+          <a class="active" href="/homepage/themes">Themes</a>
+        </li>
+        
+        
+        
+        <li>
+          <a class="active" href="/homepage/venue">Venue</a>
+        </li>
+        
+        
+        
+        <li>
+          <a class="active" href="/homepage/registration">Registration</a>
+        </li>
+        
+        
+        
+        <li>
+          <a class="active" href="/homepage/faq">FAQ</a>
+        </li>
+        
+        
+        
+        <li>
+          <a class="active" href="/homepage/contact">Contact</a>
+        </li>
+        
+      </ul>
+    </div>
+  </nav>
+</header>
+
 
     <main>
         <div class="page-header-section py-4 bg-navy text-white">
@@ -367,63 +392,21 @@
 </div>
     </main>
 
-    <footer class="footer bg-dark text-light py-5 mt-5">
-    <div class="container">
-        <div class="row">
-            <!-- 運営情報 -->
-            <div class="col-md-4 mb-4">
-                <h5 class="fw-bold mb-3"><i class="bi bi-moisture me-2"></i>ケモインフォマティクス×ハッカソン合宿</h5>
-                <p class="text-secondary small">ケモインフォマティクスの最前線を学び、チームでハッカソンに挑む合宿型ワークショップ</p>
-                <p class="text-secondary small mb-0">主催：ケモインフォマティクス×ハッカソン合宿 実行委員会</p>
-            </div>
-
-            <!-- リンク -->
-            <div class="col-md-4 mb-4">
-                <h6 class="fw-bold mb-3">ページリンク</h6>
-                <ul class="list-unstyled small">
-                    <li class="mb-1"><a href="/homepage/about"
-                            class="text-secondary text-decoration-none">About（概要）</a></li>
-                    <li class="mb-1"><a href="/homepage/program"
-                            class="text-secondary text-decoration-none">Program（日程）</a></li>
-                    <li class="mb-1"><a href="/homepage/themes"
-                            class="text-secondary text-decoration-none">Themes（テーマ）</a></li>
-                    <li class="mb-1"><a href="/homepage/venue"
-                            class="text-secondary text-decoration-none">Venue（会場）</a></li>
-                    <li class="mb-1"><a href="/homepage/registration"
-                            class="text-secondary text-decoration-none">Registration（参加登録）</a></li>
-                    <li class="mb-1"><a href="/homepage/faq"
-                            class="text-secondary text-decoration-none">FAQ</a></li>
-                    <li class="mb-1"><a href="/homepage/contact"
-                            class="text-secondary text-decoration-none">Contact（問い合わせ）</a></li>
-                </ul>
-            </div>
-
-            <!-- SNS / 連絡先 -->
-            <div class="col-md-4 mb-4">
-                <h6 class="fw-bold mb-3">Links</h6>
-                <ul class="list-unstyled">
-                    
-                    <li class="mb-2">
-                        <a href="https://github.com/Cheminformatics-hackathon" class="text-secondary text-decoration-none"
-                            target="_blank" rel="noopener">
-                            <i class="bi bi-github me-2"></i>GitHub
-                        </a>
-                    </li>
-                    
-                    
-                    
-                    
-                </ul>
-            </div>
-        </div>
-
-        <hr class="border-secondary">
-        <div class="text-center text-secondary small">
-            <p class="mb-0">&copy; 2026 ケモインフォマティクス×ハッカソン合宿 実行委員会. All rights
-                reserved.</p>
-        </div>
+    <footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <h2><i class="bi bi-hexagon-fill"></i> ケモインフォマティクス×ハッカソン合宿</h2>
+      <p>Cheminformatics Hackathon Camp</p>
+      <p class="small">ケモインフォマティクスの最前線を学び、チームでハッカソンに挑む合宿型ワークショップ</p>
     </div>
+    <div class="footer-meta">
+      <p>主催: ケモインフォマティクス×ハッカソン合宿 実行委員会</p>
+      <p>お問い合わせ: TBA</p>
+      <p>&copy; 2026 ケモインフォマティクス×ハッカソン合宿 実行委員会</p>
+    </div>
+  </div>
 </footer>
+
 
     <!-- Bootstrap 5 JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"

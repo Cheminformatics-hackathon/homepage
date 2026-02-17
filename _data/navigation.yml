@@ -1,0 +1,31 @@
+- label: Home
+  url: /
+  match: /
+
+- label: About
+  url: /about
+  match: /about
+
+- label: Program
+  url: /program
+  match: /program
+
+- label: Themes
+  url: /themes
+  match: /themes
+
+- label: Venue
+  url: /venue
+  match: /venue
+
+- label: Registration
+  url: /registration
+  match: /registration
+
+- label: FAQ
+  url: /faq
+  match: /faq
+
+- label: Contact
+  url: /contact
+  match: /contact

@@ -1,0 +1,46 @@
+<section class="home-main">
+  <div class="container">
+    <div class="home-grid">
+      <article class="panel panel-news">
+        <h2><i class="bi bi-info-circle-fill"></i> NEWS | お知らせ</h2>
+        <ul class="news-list">
+          {% for item in site.data.news limit:6 %}
+          <li>
+            <p class="news-head">
+              <time datetime="{{ item.date }}">{{ item.date }}</time>
+              {% if item.badge != "" %}
+              <span class="badge-news">{{ item.badge }}</span>
+              {% endif %}
+              <strong>{{ item.title }}</strong>
+            </p>
+            {% if item.content != "" %}
+            <p class="news-body">{{ item.content }}</p>
+            {% endif %}
+          </li>
+          {% endfor %}
+        </ul>
+      </article>
+
+      <aside class="side-stack">
+        <section class="panel panel-event">
+          <h2><i class="bi bi-calendar-event"></i> Event</h2>
+          <div class="event-card">
+            <p class="event-year">{{ site.data.site.event.edition }}</p>
+            <p class="event-name">Hackathon Camp</p>
+            <a href="{{ '/program' | relative_url }}" class="event-link">プログラムを見る</a>
+          </div>
+        </section>
+
+        <section class="panel panel-sponsors">
+          <h2><i class="bi bi-hexagon-fill"></i> 協賛・パートナー</h2>
+          <ul>
+            <li>Conflex</li>
+            <li>HULINKS</li>
+            <li>MOLSIS</li>
+          </ul>
+          <a href="{{ '/sponsors' | relative_url }}" class="text-link">協賛募集ページへ</a>
+        </section>
+      </aside>
+    </div>
+  </div>
+</section>
