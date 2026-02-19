@@ -68,6 +68,7 @@ a:hover {
   gap: 0.7rem;
   align-items: center;
   padding: 0.85rem 0;
+  margin-left: 0.4rem;
   margin-right: 1rem;
 }
 
@@ -118,16 +119,21 @@ a:hover {
   display: inline-flex;
   align-items: center;
   line-height: 1.2;
+  transition: background-color 0.18s ease, color 0.18s ease;
 }
 
 .main-nav-list li:first-child a {
   border-left: 1px solid var(--line);
 }
 
-.main-nav-list a.active,
+.main-nav-list a.active {
+  color: #183248;
+  background: #fff;
+}
+
 .main-nav-list a:hover {
-  color: var(--brand-blue);
-  background: #f3f8fc;
+  color: #fff;
+  background: var(--brand-blue);
 }
 
 .hero-wrap {
@@ -463,8 +469,9 @@ a:hover {
     min-height: 270px;
   }
 
-  .hero-bubbles span:nth-child(1) { width: 85px; height: 85px; }
-  .hero-bubbles span:nth-child(5) { width: 58px; height: 58px; }
+  .hero-bubbles {
+    display: none;
+  }
 
   .hero-copy {
     padding: 2rem 1.1rem 1.6rem;
