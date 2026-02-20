@@ -372,17 +372,84 @@ a:hover {
 }
 
 .page-header-section {
-  background: var(--brand-blue);
+  background: var(--page-bg);
+  padding: 1rem 0 0.4rem !important;
+}
+
+.page-header-section .container {
+  background: linear-gradient(120deg, var(--brand-sky), #f8fcff 60%, #eaf6ff);
+  border: 1px solid #d3e6f5;
+  padding: 0.95rem 1.25rem;
 }
 
 .page-title {
   margin: 0;
-  color: #fff;
-  font-size: 1.6rem;
+  color: #18334b;
+  font-size: 1.7rem;
 }
 
 .page-subtitle {
-  color: rgba(255, 255, 255, 0.85);
+  color: #4c6173;
+}
+
+.page-content-wrap {
+  padding-top: 0.8rem !important;
+}
+
+.page-content {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  padding: 1.4rem 1.65rem;
+}
+
+.page-content h2 {
+  margin-top: 0.4rem;
+  margin-bottom: 1rem;
+  color: #1a3146;
+}
+
+.about-block {
+  background: #fafcff;
+  border: 1px solid var(--line);
+  padding: 1.1rem 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.about-block h2 {
+  margin-top: 0.1rem;
+}
+
+.about-block-tools {
+  margin-top: -0.3rem;
+}
+
+.page-content p,
+.page-content li,
+.page-content td,
+.page-content th {
+  color: #2b3f52;
+}
+
+.page-content hr {
+  border: 0;
+  border-top: 1px solid var(--line);
+  margin: 1.4rem 0;
+  opacity: 1;
+}
+
+.page-content table {
+  width: 100%;
+}
+
+.page-content .card {
+  border: 1px solid var(--line) !important;
+  box-shadow: none !important;
+  background: #fafcff;
+}
+
+.page-content .badge.bg-navy {
+  background: var(--brand-blue);
+  color: #fff;
 }
 
 .site-footer {
@@ -396,6 +463,7 @@ a:hover {
   display: flex;
   justify-content: space-between;
   gap: 1.2rem;
+  padding: 0 0.8rem;
 }
 
 .footer-brand h2 {
@@ -475,6 +543,12 @@ a:hover {
 
   .hero-copy {
     padding: 2rem 1.1rem 1.6rem;
+  }
+
+  .page-header-section .container,
+  .page-content {
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 
   .hero-meta {

@@ -5,7 +5,7 @@
     {% include head.html %}
 </head>
 
-<body>
+<body{% if page.body_class %} class="{{ page.body_class }}"{% endif %}>
     {% include nav.html %}
 
     <main>
