@@ -1,71 +1,54 @@
 ---
 layout: page
-title: "Program"
-subtitle: "日程・タイムテーブル"
+title: "Event"
+subtitle: "開催案内・プログラム"
 description: "ケモインフォマティクス×ハッカソン合宿のプログラム・タイムテーブルをご確認いただけます。"
 permalink: /program/
+body_class: event-page
 ---
 
-{% if site.data.program.notice %}
-<div class="alert alert-warning d-flex align-items-center" role="alert">
-  <i class="bi bi-exclamation-triangle-fill me-2"></i>
-  <div>{{ site.data.program.notice }}</div>
-</div>
-{% endif %}
+<section class="event-ribbon-block">
+  <h2 class="event-ribbon-title mb-0">イベント開催案内</h2>
+</section>
 
-<!-- Day Tabs -->
-<ul class="nav nav-tabs mb-4" id="programTab" role="tablist">
-  {% for day in site.data.program.days %}
-  <li class="nav-item" role="presentation">
-    <button class="nav-link {% if forloop.first %}active{% endif %}" id="tab-{{ day.label | slugify }}" data-bs-toggle="tab" data-bs-target="#pane-{{ day.label | slugify }}" type="button" role="tab" aria-controls="pane-{{ day.label | slugify }}" aria-selected="{% if forloop.first %}true{% else %}false{% endif %}">
-      <strong>{{ day.label }}</strong>
-      {% if day.date != "TBA" %}<small class="text-muted ms-1">{{ day.date }}</small>{% endif %}
-    </button>
-  </li>
-  {% endfor %}
-</ul>
-
-<!-- Tab Content -->
-<div class="tab-content" id="programTabContent">
-  {% for day in site.data.program.days %}
-  <div class="tab-pane fade {% if forloop.first %}show active{% endif %}" id="pane-{{ day.label | slugify }}" role="tabpanel" aria-labelledby="tab-{{ day.label | slugify }}">
-
-    <div class="table-responsive">
-      <table class="table table-program">
-        <thead>
-          <tr>
-            <th style="width: 15%;">時間</th>
-            <th style="width: 45%;">内容</th>
-            <th style="width: 20%;">場所</th>
-            <th style="width: 20%;">担当</th>
-          </tr>
-        </thead>
-        <tbody>
-          {% for session in day.sessions %}
-          <tr class="session-{{ session.type }}">
-            <td class="fw-medium">{{ session.time }}</td>
-            <td>{{ session.title }}</td>
-            <td class="text-muted">{{ session.location }}</td>
-            <td class="text-muted">{{ session.speaker }}</td>
-          </tr>
-          {% endfor %}
-        </tbody>
-      </table>
-    </div>
-
+<section class="event-announcement-block">
+  <div class="event-announcement-head">
+    <h3>ケモインフォマティクス×ハッカソン合宿 開催のお知らせ</h3>
+    <p class="event-updated mb-0">更新日: {{ site.time | date: "%Y/%m/%d" }}</p>
   </div>
-  {% endfor %}
-</div>
 
----
+  <div class="event-announcement-body">
+    <p class="mb-2"><strong>【会期】</strong> {{ site.data.site.date.display }}</p>
+    <p class="mb-2"><strong>【会場】</strong> {{ site.data.site.venue.name }}</p>
+    {% if site.data.site.venue.address and site.data.site.venue.address != "TBA" %}
+    <p class="mb-2 ps-4">{{ site.data.site.venue.address }}</p>
+    {% endif %}
+    <p class="mb-0">詳細は、決まり次第このページで更新します。</p>
+  </div>
+</section>
 
-### セッション種別
-
-<div class="row g-2 mt-2">
-  <div class="col-auto"><span class="badge" style="background:#e8a838;">基調講演</span></div>
-  <div class="col-auto"><span class="badge" style="background:#28a745;">ハッカソン</span></div>
-  <div class="col-auto"><span class="badge" style="background:#6f42c1;">ワークショップ</span></div>
-  <div class="col-auto"><span class="badge" style="background:#0d6efd;">発表・トーク</span></div>
-  <div class="col-auto"><span class="badge" style="background:#e83e8c;">交流会</span></div>
-  <div class="col-auto"><span class="badge" style="background:#6c757d;">一般</span></div>
-</div>
+<section class="event-records-block">
+  <h3 class="event-section-title">イベント記録</h3>
+  <div class="table-responsive">
+    <table class="table event-records-table mb-0">
+      <thead>
+        <tr>
+          <th style="width: 14%;">回</th>
+          <th style="width: 20%;">年度</th>
+          <th style="width: 26%;">会場</th>
+          <th style="width: 22%;">会期</th>
+          <th style="width: 18%;">備考</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>第1回</th>
+          <td>2026</td>
+          <td>{{ site.data.site.venue.name }}</td>
+          <td>{{ site.data.site.date.display }}</td>
+          <td>準備中</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>

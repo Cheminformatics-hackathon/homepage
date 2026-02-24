@@ -452,6 +452,187 @@ a:hover {
   color: #fff;
 }
 
+.faq-page .faq-intro-block,
+.faq-page .faq-category-block,
+.faq-page .faq-footer-cta {
+  background: #fafcff;
+  border: 1px solid var(--line);
+  padding: 1rem 1.15rem;
+  margin-bottom: 1rem;
+}
+
+.faq-page .faq-category-title {
+  margin: 0 0 0.9rem;
+  font-size: 1.12rem;
+  color: #18334b;
+  display: flex;
+  align-items: center;
+}
+
+.faq-page .faq-category-title i {
+  color: var(--accent);
+}
+
+.faq-page .faq-accordion {
+  --bs-accordion-border-color: #dce7f0;
+  --bs-accordion-btn-bg: #ffffff;
+  --bs-accordion-active-bg: #eef7ff;
+  --bs-accordion-active-color: #16344c;
+  --bs-accordion-btn-color: #223a4f;
+  --bs-accordion-color: #324c60;
+  --bs-accordion-border-radius: 0;
+  margin-bottom: 0;
+}
+
+.faq-page .faq-accordion .accordion-item {
+  border-left: 1px solid #dce7f0;
+  border-right: 1px solid #dce7f0;
+}
+
+.faq-page .faq-accordion .accordion-item + .accordion-item {
+  margin-top: 0.45rem;
+}
+
+.faq-page .faq-accordion .accordion-button {
+  font-weight: 600;
+  line-height: 1.45;
+  box-shadow: none;
+}
+
+.faq-page .faq-accordion .accordion-button:not(.collapsed) {
+  border-bottom: 1px solid #dce7f0;
+}
+
+.faq-page .faq-accordion .accordion-button:focus {
+  box-shadow: 0 0 0 0.18rem rgba(15, 84, 131, 0.14);
+}
+
+.faq-page .faq-accordion .accordion-body {
+  background: #fff;
+  color: #445a6d !important;
+}
+
+.faq-page .faq-footer-cta {
+  background: #fff;
+}
+
+.event-page .event-ribbon-block,
+.event-page .event-announcement-block,
+.event-page .event-records-block,
+.event-page .event-program-block {
+  background: #fafcff;
+  border: 1px solid var(--line);
+  padding: 1rem 1.15rem;
+  margin-bottom: 1rem;
+}
+
+.event-page .event-ribbon-block {
+  background: linear-gradient(120deg, #d9efff, #eef8ff 65%, #e3f2ff);
+  border-color: #d3e6f5;
+  padding: 0.8rem 1rem;
+}
+
+.event-page .event-ribbon-title {
+  margin: 0;
+  color: #18334b;
+  font-size: 1.2rem;
+}
+
+.event-page .event-announcement-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+  border-bottom: 1px solid #dce7f0;
+  padding-bottom: 0.75rem;
+  margin-bottom: 0.8rem;
+}
+
+.event-page .event-announcement-head h3 {
+  margin: 0;
+  font-size: 1.35rem;
+  color: #18334b;
+}
+
+.event-page .event-updated {
+  color: #52687a;
+  font-size: 0.92rem;
+  white-space: nowrap;
+}
+
+.event-page .event-announcement-body {
+  color: #2d4355;
+}
+
+.event-page .event-section-title {
+  margin: 0 0 0.9rem;
+  color: #18334b;
+  font-size: 1.15rem;
+  padding: 0.6rem 0.8rem;
+  border: 1px solid #dce7f0;
+  background: #fff;
+}
+
+.event-page .event-records-table {
+  --bs-table-bg: transparent;
+  --bs-table-striped-bg: #f5faff;
+  --bs-table-striped-color: #243a4d;
+  color: #2b3f52;
+  border-color: #dce7f0;
+}
+
+.event-page .event-records-table thead th {
+  background: #eef7ff;
+  color: #1c374d;
+  border-bottom-width: 1px;
+}
+
+.event-page .event-records-table th,
+.event-page .event-records-table td {
+  vertical-align: middle;
+}
+
+.event-page .event-program-alert {
+  border-color: #f3dd9a;
+  background: #fff8df;
+}
+
+.event-page .event-tab-list {
+  border-bottom: 1px solid #dce7f0;
+}
+
+.event-page .event-tab-list .nav-link {
+  border: 1px solid #dce7f0;
+  border-bottom: none;
+  color: #254257;
+  background: #f7fbff;
+  margin-right: 0.35rem;
+}
+
+.event-page .event-tab-list .nav-link.active {
+  background: #fff;
+  color: #16344c;
+  font-weight: 700;
+}
+
+.event-page #programTabContent {
+  border: 1px solid #dce7f0;
+  background: #fff;
+  padding: 0.8rem;
+}
+
+.event-page .event-subsection-title {
+  margin: 0 0 0.35rem;
+  color: #1f3a50;
+  font-size: 1rem;
+}
+
+.event-page .event-legend-wrap {
+  margin-top: 1rem;
+  border-top: 1px solid #dce7f0;
+  padding-top: 0.9rem;
+}
+
 .site-footer {
   background: var(--brand-blue);
   color: #fff;
@@ -549,6 +730,15 @@ a:hover {
   .page-content {
     padding-left: 1rem;
     padding-right: 1rem;
+  }
+
+  .event-page .event-announcement-head {
+    flex-direction: column;
+    gap: 0.4rem;
+  }
+
+  .event-page .event-updated {
+    white-space: normal;
   }
 
   .hero-meta {

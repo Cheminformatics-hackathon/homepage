@@ -4,14 +4,18 @@ title: "FAQ"
 subtitle: "よくある質問"
 description: "ケモインフォマティクス×ハッカソン合宿に関するよくある質問と回答です。"
 permalink: /faq/
+body_class: faq-page
 ---
 
-以下は参加をご検討中の方からよくいただく質問です。ここに載っていない質問は [お問い合わせ]({{ '/contact' | relative_url }}) からお気軽にどうぞ。
+<div class="faq-intro-block">
+  <p class="mb-0">以下は参加をご検討中の方からよくいただく質問です。ここに載っていない質問は <a href="{{ '/contact' | relative_url }}">お問い合わせ</a> からお気軽にどうぞ。</p>
+</div>
 
 {% for category in site.data.faq.categories %}
-<h3 class="mt-5 mb-3"><i class="bi bi-folder2-open me-2"></i>{{ category.name }}</h3>
+<section class="faq-category-block">
+<h3 class="faq-category-title"><i class="bi bi-folder2-open me-2"></i>{{ category.name }}</h3>
 
-<div class="accordion mb-4" id="faq-{{ category.id }}">
+<div class="accordion faq-accordion" id="faq-{{ category.id }}">
   {% for item in category.items %}
   <div class="accordion-item">
     <h2 class="accordion-header" id="heading-{{ category.id }}-{{ forloop.index }}">
@@ -27,10 +31,9 @@ permalink: /faq/
   </div>
   {% endfor %}
 </div>
+</section>
 {% endfor %}
 
----
-
-<div class="text-center mt-4">
-  <p>その他のご質問は <a href="{{ '/contact' | relative_url }}" class="btn btn-outline-navy btn-sm"><i class="bi bi-envelope me-1"></i>お問い合わせ</a> からお気軽にどうぞ。</p>
+<div class="faq-footer-cta text-center">
+  <p class="mb-0">その他のご質問は <a href="{{ '/contact' | relative_url }}" class="btn btn-outline-navy btn-sm"><i class="bi bi-envelope me-1"></i>お問い合わせ</a> からお気軽にどうぞ。</p>
 </div>
