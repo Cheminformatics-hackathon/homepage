@@ -590,6 +590,13 @@ a:hover {
 .event-page .event-records-table th,
 .event-page .event-records-table td {
   vertical-align: middle;
+  text-align: center;
+}
+
+.event-page .event-record-link {
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 2px;
 }
 
 .event-page .event-program-alert {

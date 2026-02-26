@@ -34,7 +34,6 @@ body_class: event-page
       <thead>
         <tr>
           <th style="width: 14%;">回</th>
-          <th style="width: 20%;">年度</th>
           <th style="width: 26%;">会場</th>
           <th style="width: 22%;">会期</th>
           <th style="width: 18%;">備考</th>
@@ -42,8 +41,13 @@ body_class: event-page
       </thead>
       <tbody>
         <tr>
-          <th>第1回</th>
-          <td>2026</td>
+          <th><a class="event-record-link" href="{{ '/program/info_1/' | relative_url }}">第1回</a></th>
+          <td>横浜市上郷森の家</td>
+          <td>2025/8/28 ~ 2025/8/29</td>
+          <td><a class="event-record-link" href="{{ '/program/report_1/' | relative_url }}">開催報告</a></td>
+        </tr>
+        <tr>
+          <th><a class="event-record-link" href="{{ '/program/info_2/' | relative_url }}">第2回</a></th>
           <td>{{ site.data.site.venue.name }}</td>
           <td>{{ site.data.site.date.display }}</td>
           <td>準備中</td>
