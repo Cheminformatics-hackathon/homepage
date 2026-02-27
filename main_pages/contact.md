@@ -14,8 +14,7 @@ permalink: /contact/
   <div class="col-md-6">
     <div class="card h-100 border-0 shadow-sm text-center p-4">
       <div class="card-body">
-        <i class="bi bi-envelope fs-1 text-navy d-block mb-3"></i>
-        <h5 class="fw-bold">メール</h5>
+        <h3 class="fw-bold">メール</h3>
         {% if site.data.site.links.email != "TBA" and site.data.site.links.email != "" %}
         <p class="mb-0"><a href="mailto:{{ site.data.site.links.email }}">{{ site.data.site.links.email }}</a></p>
         {% else %}
@@ -27,8 +26,19 @@ permalink: /contact/
   <div class="col-md-6">
     <div class="card h-100 border-0 shadow-sm text-center p-4">
       <div class="card-body">
-        <i class="bi bi-github fs-1 text-navy d-block mb-3"></i>
-        <h5 class="fw-bold">GitHub</h5>
+        <h3 class="fw-bold">五東研究室 ホームページ</h3>
+        {% if site.data.site.links.github != "" %}
+        <p class="mb-0"><a href="{{ site.data.site.links.homepage }}" target="_blank" rel="noopener">{{ site.data.site.links.homepage }}</a></p>
+        {% else %}
+        <p class="mb-0 text-muted">TBA</p>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+  <div class="col-md-6">
+    <div class="card h-100 border-0 shadow-sm text-center p-4">
+      <div class="card-body">
+        <h3 class="fw-bold">GitHub</h>
         {% if site.data.site.links.github != "" %}
         <p class="mb-0"><a href="{{ site.data.site.links.github }}" target="_blank" rel="noopener">GitHub Organization</a></p>
         {% else %}

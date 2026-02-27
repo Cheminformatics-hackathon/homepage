@@ -49,9 +49,10 @@ cta:
 # SNS / 外部リンク
 links:
   github: "https://github.com/Cheminformatics-hackathon"
+  homepage: "https://poclab-web.github.io/homepage/"
   twitter: ""
   discord: ""
-  email: "TBA"
+  email: "ynu.cheminfo.hackathon.2026@gmail.com"
 
 # OGP設定
 ogp:
@@ -60,5 +61,5 @@ ogp:
 
 # 運営情報
 organizer:
-  name: "ケモインフォマティクス×ハッカソン合宿 実行委員会"
-  contact: "TBA"
+  name: "横浜国立大学 理工学部 五東研究室"
+  contact: "ynu.cheminfo.hackathon.2026@gmail.com"
