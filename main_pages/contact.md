@@ -4,50 +4,42 @@ title: "Contact"
 subtitle: "お問い合わせ"
 description: "ケモインフォマティクス×ハッカソン合宿へのお問い合わせ方法です。"
 permalink: /contact/
+body_class: contact
 ---
-
-## お問い合わせ方法
-
-ご質問・ご相談はお気軽に以下の方法でお問い合わせください。
-
-<div class="row g-4 my-4">
-  <div class="col-md-6">
-    <div class="card h-100 border-0 shadow-sm text-center p-4">
-      <div class="card-body">
-        <h3 class="fw-bold">メール</h3>
-        {% if site.data.site.links.email != "TBA" and site.data.site.links.email != "" %}
-        <p class="mb-0"><a href="mailto:{{ site.data.site.links.email }}">{{ site.data.site.links.email }}</a></p>
-        {% else %}
-        <p class="mb-0 text-muted">TBA（準備中）</p>
-        {% endif %}
-      </div>
-    </div>
-  </div>
-  <div class="col-md-6">
-    <div class="card h-100 border-0 shadow-sm text-center p-4">
-      <div class="card-body">
-        <h3 class="fw-bold">五東研究室 ホームページ</h3>
-        {% if site.data.site.links.github != "" %}
-        <p class="mb-0"><a href="{{ site.data.site.links.homepage }}" target="_blank" rel="noopener">{{ site.data.site.links.homepage }}</a></p>
-        {% else %}
-        <p class="mb-0 text-muted">TBA</p>
-        {% endif %}
-      </div>
-    </div>
-  </div>
-  <div class="col-md-6">
-    <div class="card h-100 border-0 shadow-sm text-center p-4">
-      <div class="card-body">
-        <h3 class="fw-bold">GitHub</h>
-        {% if site.data.site.links.github != "" %}
-        <p class="mb-0"><a href="{{ site.data.site.links.github }}" target="_blank" rel="noopener">GitHub Organization</a></p>
-        {% else %}
-        <p class="mb-0 text-muted">TBA</p>
-        {% endif %}
-      </div>
-    </div>
-  </div>
+<div class="contact-ribbon-block">
+  <h2 class="mb-0">お問い合わせ方法</h2>
+  <p class="mb-0">ご質問・ご相談は以下の方法でお問い合わせください</p>
 </div>
+
+
+<section class="contact-category-block">
+  <div class="contact-category-block-head">
+    <h3 class="fw-bold">メール</h3>
+      {% if site.data.site.links.email != "TBA" and site.data.site.links.email != "" %}
+      <p class="mb-0"><a href="mailto:{{ site.data.site.links.email }}">{{ site.data.site.links.email }}</a></p>
+      {% else %}
+      <p class="mb-0 text-muted">TBA（準備中）</p>
+      {% endif %}
+  </div>
+
+  <div class="contact-category-block-head">
+    <h3 class="fw-bold">五東研究室 ホームページ</h3>
+      {% if site.data.site.links.github != "" %}
+      <p class="mb-0"><a href="{{ site.data.site.links.homepage }}" target="_blank" rel="noopener">{{ site.data.site.links.homepage }}</a></p>
+      {% else %}
+      <p class="mb-0 text-muted">TBA</p>
+      {% endif %}
+  </div>
+
+  <div class="contact-category-block-body">
+    <h3 class="fw-bold">GitHub</h3>
+      {% if site.data.site.links.github != "" %}
+      <p class="mb-0"><a href="{{ site.data.site.links.github }}" target="_blank" rel="noopener">GitHub Organization</a></p>
+      {% else %}
+      <p class="mb-0 text-muted">TBA</p>
+      {% endif %}
+  </div>
+</section>
 
 {% if site.data.site.links.twitter != "" %}
 <div class="row g-4 mb-4">

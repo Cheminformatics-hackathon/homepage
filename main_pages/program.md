@@ -42,7 +42,7 @@ body_class: event-page
       <tbody>
         <tr>
           <th><a class="event-record-link" href="{{ '/program/info_1/' | relative_url }}">第1回</a></th>
-          <td>横浜市上郷森の家</td>
+          <td>横浜市上郷・森の家</td>
           <td>2025/8/28 ~ 2025/8/29</td>
           <td><a class="event-record-link" href="{{ '/program/report_1/' | relative_url }}">開催報告</a></td>
         </tr>

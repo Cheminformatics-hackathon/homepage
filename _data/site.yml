@@ -13,11 +13,11 @@ event:
 
 # 開催情報（未定の場合は "TBA" に設定）
 date:
-  start: "TBA"
-  end: "TBA"
-  display: "TBA（2泊3日を予定）"
+  start: "2026/8/26"
+  end: "2026/8/27"
+  display: "2026/8/26〜2026/8/27"
 venue:
-  name: "TBA"
+  name: "横浜市上郷・森の家"
   address: "TBA"
   access: "TBA"
   map_url: ""

@@ -442,7 +442,7 @@ a:hover {
 }
 
 .page-content .card {
-  border: 1px solid var(--line) !important;
+  border: 0px solid var(--line) !important;
   box-shadow: none !important;
   background: #fafcff;
 }
@@ -674,7 +674,32 @@ a:hover {
 .footer-meta {
   text-align: right;
   color: #d6e9f7;
+  margin-top: 40px;
   font-size: 0.92rem;
+}
+
+.contact .contact-ribbon-block,
+.contact .contact-category-block,
+.contact .contact-footer-cta {
+  background: #fafcff;
+  border: 1px solid var(--line);
+  padding: 1rem 1.15rem;
+  margin-bottom: 1rem;
+}
+
+.contact .contact-ribbon-block {
+  background: linear-gradient(120deg, #d9efff, #eef8ff 65%, #e3f2ff);
+  border-color: #d3e6f5;
+  padding: 0.8rem 1rem;
+}
+
+.contact .contact-category-block-head {
+  color: #2d4355;
+  border-bottom: 1px solid #dce7f0;
+}
+
+.contact .contact-category-block-body {
+  color: #2d4355;
 }
 
 @media (max-width: 991px) {
