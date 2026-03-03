@@ -7,10 +7,6 @@ permalink: /faq/
 body_class: faq-page
 ---
 
-<div class="faq-intro-block">
-  <p class="mb-0">以下は参加をご検討中の方からよくいただく質問です。ここに載っていない質問は <a href="{{ '/contact' | relative_url }}">お問い合わせ</a> からお気軽にどうぞ。</p>
-</div>
-
 {% for category in site.data.faq.categories %}
 <section class="faq-category-block">
   <h2 class="faq-category-title">

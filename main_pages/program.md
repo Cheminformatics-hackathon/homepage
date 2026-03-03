@@ -23,7 +23,7 @@ body_class: event-page
     {% if site.data.site.venue.address and site.data.site.venue.address != "TBA" %}
     <p class="mb-2 ps-4">{{ site.data.site.venue.address }}</p>
     {% endif %}
-    <p class="mb-0">詳細は、決まり次第このページで更新します。</p>
+    <p class="mb-0">詳細は、<a class="event-record-link" href="{{ '/program/info_2/' | relative_url }}">こちら</a>をご覧ください。</p>
   </div>
 </section>
 

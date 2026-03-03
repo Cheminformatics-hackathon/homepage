@@ -515,6 +515,12 @@ a:hover {
   background: #fff;
 }
 
+.faq-question {
+  border-top: 1px solid #dce7f0;
+  padding-top: 1rem;
+  margin-top: 1rem;
+}
+
 .event-page .event-ribbon-block,
 .event-page .event-announcement-block,
 .event-page .event-records-block,
