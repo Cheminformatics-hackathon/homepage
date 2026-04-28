@@ -3,6 +3,10 @@
 GitHub Pages + Jekyll で公開する静的サイトです。  
 現在のナビゲーションは `Home / About / Event / FAQ / Contact` の構成です。
 
+## 公開URL
+
+https://cheminformatics-hackathon.github.io/homepage/
+
 ## ローカル確認
 ```bash
 bundle install
