@@ -44,7 +44,7 @@ body_class: event-page
 
 🔹参加費：8,000円 ※宿泊されない方は4000円
 
-🔹申し込みURL：https://connpass.com/event/382287/
+🔹申し込みURL：[https://connpass.com/event/382287/](https://connpass.com/event/382287/)
 
 ---
 ## タイムスケジュール
