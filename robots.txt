@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://cheminformatics-hackathon.github.io/homepage/sitemap.xml

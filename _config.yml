@@ -5,7 +5,7 @@
 
 title: "ケモインフォマティクス×ハッカソン合宿"
 description: "ケモインフォマティクスの最前線を学び、仲間と共にハッカソンで実践するための合宿型イベント"
-url: "" # GitHub Pages公開後に設定（例: https://username.github.io）
+url: "https://cheminformatics-hackathon.github.io" # GitHub Pages公開後に設定（例: https://username.github.io）
 baseurl: "/homepage" # リポジトリ名に合わせる
 
 # テーマ
