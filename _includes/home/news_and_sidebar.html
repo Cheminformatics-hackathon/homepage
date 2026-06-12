@@ -14,7 +14,14 @@
               <strong>{{ item.title }}</strong>
             </p>
             {% if item.content != "" %}
-            <p class="news-body">{{ item.content }}</p>
+            {% assign content_parts = item.content | split: 'URL: ' %}
+            <p class="news-body">
+              {% if content_parts.size > 1 %}
+              {{ content_parts | first }} URL: <a href="{{ content_parts | last | strip }}" target="_blank" rel="noopener">{{ content_parts | last | strip }}</a>
+              {% else %}
+              {{ item.content }}
+              {% endif %}
+            </p>
             {% endif %}
           </li>
           {% endfor %}
