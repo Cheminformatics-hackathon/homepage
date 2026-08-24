@@ -79,7 +79,7 @@ body_class: event-page
 
 ショートプレゼンのプログラムを公開しました!!(2026/8/25追記)
 
-ショートプレゼンのプログラム(https://drive.google.com/file/d/1E20BooTiJcHLU2--Y8xDNEK57ew5Z6If/view?usp=drive_link)
+[ショートプレゼンのプログラム](https://drive.google.com/file/d/1E20BooTiJcHLU2--Y8xDNEK57ew5Z6If/view?usp=drive_link)
 
 ---
 ## レクリエーションについて
