@@ -106,7 +106,7 @@ Matsumoto, Yuto, and Hiroaki Gotoh. "[Compound classification and consideration 
 ### 主催
 横浜国立大学理工学府化学・生命系専攻
 
-五東研究室　加藤　多田　小出
+五東研究室　加藤　多田　小出　坪井
 </section>
 
 <section class="about-block" markdown="1">
