@@ -50,7 +50,7 @@ body_class: event-page
           <th><a class="event-record-link" href="{{ '/program/info_2/' | relative_url }}">第2回</a></th>
           <td>{{ site.data.site.venue.name }}</td>
           <td>{{ site.data.site.date.display }}</td>
-          <td>準備中</td>
+          <td><a class="event-record-link" href="{{ '/program/report_2/' | relative_url }}">開催報告</a></td>
         </tr>
       </tbody>
     </table>
